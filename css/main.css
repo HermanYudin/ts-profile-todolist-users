@@ -1,0 +1,12 @@
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --c-blue: #4682b4;
+  --c-gray: #888;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}

@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title>TS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="profile">
+        <img src="./png/profile.png" class="my-photo" alt="profile" />
+        <div class="header-titles">
+          <h1 class="name-title">German Iudin</h1>
+          <h2 class="profession-title">Front-end developer</h2>
+        </div>
+      </div>
+      <section class="main-info">
+        <article class="info-article" id="Contacts">
+          <h2 class="info-header">Contacts</h2>
+          <ul class="info-list">
+            <li class="city-info info">
+              City:
+              <a
+                href="https://yandex.ru/maps/geo/volgograd/53166117/?ll=44.516979%2C48.707068&z=12"
+                class="info-link"
+              >
+                &nbsp Russia,Volgograd</a
+              >
+            </li>
+            <li class="email-info info">
+              Email:
+              <a href="mailto:hermanhockey1994@yandex.ru" class="info-link">
+                &nbsp hermanhockey1994@yandex.ru</a
+              >
+            </li>
+            <li class="github-info info">
+              Github:
+              <a href="https://github.com/HermanYudin" class="info-link">
+                &nbsp HermanYudin</a
+              >
+            </li>
+            <li class="telegram-info info">
+              Telegram:
+              <a href="https://t.me/pushketol" class="info-link">
+                &nbsp @pushketol</a
+              >
+            </li>
+            <li class="discord-info info">
+              Discord:
+              <a
+                href="https://discordapp.com/users/919042667160154132"
+                class="info-link"
+              >
+                &nbsp german_iudin</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article class="info-article" id="AboutMe">
+          <h2 class="info-header">About me</h2>
+          <span class="about-info">
+            I am fluent in HTML5/CSS3, I work with Sass, Less preprocessors, I
+            confidently use Git and Webpack tools.<br /><br />
+
+            I work with the Vue framework.js 2, using Vuex, Vue Router, as well
+            as the library Nuxt.js 2.<br /><br />
+
+            I am confident in Figma. I make up pixel-perfect depending on the
+            customer's wishes. <br /><br />
+
+            I have experience working in a commercial project development team
+            as a Frontend developer.<br /><br />
+
+            I am learning fast, constantly keeping abreast of new technologies.
+            He is extremely interested in his profession. I have a wide range of
+            qualities that allow me to work well in a team. I like to get new
+            knowledge and share it</span
+          >
+        </article>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="todo-list">
+        <h2 class="todo-list_title">TODO LIST</h2>
+        <div class="todo-list_container">
+          <div id="addingElement" class="add-element">
+            <label for="new-task" class="new-task">Add Task</label>
+            <div class="task-row-wrapper">
+              <input id="new-task" class="task" type="text" />
+              <button class="add">Add</button>
+            </div>
+          </div>
+          <h3 class="incompleted-tasks_title">Todo</h3>
+          <ul id="incompleted-tasks" class="incompleted-tasks">
+            <li class="incompleted-task">
+              <input type="checkbox" />
+              <label class="task">Get a job</label>
+              <input type="text" class="task" />
+              <button class="edit">Edit</button>
+              <button class="delete"><img src="./svg/remove.svg" /></button>
+            </li>
+          </ul>
+          <h3 class="completed-tasks_title">Completed</h3>
+          <ul id="completed-tasks" class="competed-tasks">
+            <li class="competed-task">
+              <input type="checkbox" checked />
+              <label class="task">Smile</label>
+              <input type="text" class="task" />
+              <button class="edit">Edit</button>
+              <button class="delete">
+                <img class="delete_img" src="./svg/remove.svg" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="users-and-posts">
+        <h2 class="users_title">USERS AND POSTS</h2>
+        <div class="filters-container">
+          <span class="filter-span">Filter out users:</span>
+          <div class="filters">
+            <button class="filter id-filter">By id</button>
+            <button class="filter email-filter">By email</button>
+          </div>
+        </div>
+        <div class="users-and-posts_container"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
